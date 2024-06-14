@@ -9,8 +9,9 @@ public class DemoController {
 
     private Coach myCoach;
 
+    //use the setter injection when dependency is not provided, your app can provide default logic
     @Autowired
-    public DemoController(Coach theCoach) {
+    public void setCoach(Coach theCoach) {
         myCoach = theCoach;
     }
 
