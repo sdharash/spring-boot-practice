@@ -12,7 +12,7 @@ public class DemoController {
 
     //use the setter injection when dependency is not provided, your app can provide default logic
     @Autowired
-    public void setCoach(@Qualifier("hockeyCoach") Coach theCoach) {
+    public void setCoach(@Qualifier("getCricketCoach") Coach theCoach) {
         myCoach = theCoach;
     }
 
