@@ -5,10 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Lazy
-public class CricketCoach implements Coach{
+public class HockeyCoach implements Coach{
 
-    @Override
     public String getDailyWorkout() {
-        return "Practice fast bowling for 15 minutes.";
+        return "Do 15 minutes of sprint.";
     }
 }
